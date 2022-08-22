@@ -10,9 +10,17 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+        }
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -30,6 +38,16 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
         .num {
             text-align: right;
         }
@@ -39,6 +57,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--Anatomia para tabelas grandes
         table
+            caption (legenda da tabela)
             thead
                 tr
                     td, th
@@ -48,12 +67,14 @@
             tfoot
                 tr
                     td, th
+            (td = dado e th = título)
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -168,10 +189,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi debitis inventore architecto deserunt, nostrum quis iusto? Enim, nam magni quis similique perspiciatis, a assumenda ab nesciunt laborum amet aperiam est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora odit laboriosam repellat distinctio? Debitis velit doloremque impedit excepturi odio totam cumque hic consequuntur natus. Hic voluptas nostrum iusto eius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sed deserunt rerum saepe quia nihil necessitatibus, eum illo nostrum aliquid rem tempore accusantium dolore ratione amet. Vitae dignissimos veritatis eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam explicabo deserunt recusandae sapiente itaque cum officia, asperiores aperiam fugiat perspiciatis at, ad pariatur nulla, incidunt reprehenderit architecto enim maxime iste!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi debitis inventore architecto deserunt, nostrum quis iusto? Enim, nam magni quis similique perspiciatis, a assumenda ab nesciunt laborum amet aperiam est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora odit laboriosam repellat distinctio? Debitis velit doloremque impedit excepturi odio totam cumque hic consequuntur natus. Hic voluptas nostrum iusto eius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sed deserunt rerum saepe quia nihil necessitatibus, eum illo nostrum aliquid rem tempore accusantium dolore ratione amet. Vitae dignissimos veritatis eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam explicabo deserunt recusandae sapiente itaque cum officia, asperiores aperiam fugiat perspiciatis at, ad pariatur nulla, incidunt reprehenderit architecto enim maxime iste!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi debitis inventore architecto deserunt, nostrum quis iusto? Enim, nam magni quis similique perspiciatis, a assumenda ab nesciunt laborum amet aperiam est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora odit laboriosam repellat distinctio? Debitis velit doloremque impedit excepturi odio totam cumque hic consequuntur natus. Hic voluptas nostrum iusto eius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sed deserunt rerum saepe quia nihil necessitatibus, eum illo nostrum aliquid rem tempore accusantium dolore ratione amet. Vitae dignissimos veritatis eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam explicabo deserunt recusandae sapiente itaque cum officia, asperiores aperiam fugiat perspiciatis at, ad pariatur nulla, incidunt reprehenderit architecto enim maxime iste!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi debitis inventore architecto deserunt, nostrum quis iusto? Enim, nam magni quis similique perspiciatis, a assumenda ab nesciunt laborum amet aperiam est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora odit laboriosam repellat distinctio? Debitis velit doloremque impedit excepturi odio totam cumque hic consequuntur natus. Hic voluptas nostrum iusto eius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sed deserunt rerum saepe quia nihil necessitatibus, eum illo nostrum aliquid rem tempore accusantium dolore ratione amet. Vitae dignissimos veritatis eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam explicabo deserunt recusandae sapiente itaque cum officia, asperiores aperiam fugiat perspiciatis at, ad pariatur nulla, incidunt reprehenderit architecto enim maxime iste!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi debitis inventore architecto deserunt, nostrum quis iusto? Enim, nam magni quis similique perspiciatis, a assumenda ab nesciunt laborum amet aperiam est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora odit laboriosam repellat distinctio? Debitis velit doloremque impedit excepturi odio totam cumque hic consequuntur natus. Hic voluptas nostrum iusto eius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sed deserunt rerum saepe quia nihil necessitatibus, eum illo nostrum aliquid rem tempore accusantium dolore ratione amet. Vitae dignissimos veritatis eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam explicabo deserunt recusandae sapiente itaque cum officia, asperiores aperiam fugiat perspiciatis at, ad pariatur nulla, incidunt reprehenderit architecto enim maxime iste!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi debitis inventore architecto deserunt, nostrum quis iusto? Enim, nam magni quis similique perspiciatis, a assumenda ab nesciunt laborum amet aperiam est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora odit laboriosam repellat distinctio? Debitis velit doloremque impedit excepturi odio totam cumque hic consequuntur natus. Hic voluptas nostrum iusto eius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sed deserunt rerum saepe quia nihil necessitatibus, eum illo nostrum aliquid rem tempore accusantium dolore ratione amet. Vitae dignissimos veritatis eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam explicabo deserunt recusandae sapiente itaque cum officia, asperiores aperiam fugiat perspiciatis at, ad pariatur nulla, incidunt reprehenderit architecto enim maxime iste!</p>
 </body>
 </html>
