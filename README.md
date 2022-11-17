@@ -1,7 +1,4 @@
-# html-css
- Primeiro projeto
-
- Teste de alteração
+Estudos em HTML e CSS
 
 <a href="https://lucasloretoalves.github.io/projeto-android/">Projeto Android</a>
 
