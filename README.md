@@ -1,6 +1,6 @@
 <h1>Estudos em HTML e CSS</h1>
 
-<h2>Projetos realizados no Curso HTML5 e CSS3 do <a href="https://www.cursoemvideo.com/">Cursoemvideo</a>
+<h2>Projetos realizados no Curso HTML5 e CSS3 do <a href="https://www.cursoemvideo.com/">Cursoemvideo</a> <br>
 
   <a href="https://lucasloretoalves.github.io/projeto-android/">Projeto Android</a>
 
